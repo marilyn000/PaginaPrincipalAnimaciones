@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Twins Accesorios</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="page">
+        <!--Main Content-->
+        <section class="container">
+            <nav class="navbar">
+                <div class="navbar_content">
+                    <img src="./imagenes/Imagenlogo.png" alt="Logo">
+                    <ul>
+                        <li><a href="/">EXCLUSIVOS</a></li>
+                        <li><a href="/">NUEVOS</a></li>
+                        <li><a href="/">MAS VENDIDOS</a></li>
+                        <li><a href="/">MAYORISTAS</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <section class="main-content">
+                <p>Completa tu outfit con los</p>
+                <h1>Mejores accesorios!</h1>
+                <p>"Accesorios para todos los estilos"</p>
+            </section>
+           
+            <section class="side-content">
+                <div></div>
+                <p>Accesorios</p>
+                <img src="./imagenes/mujer_Accesorios.png" alt="Mujer con accesorios">
+                
+            </section>
+            <section class="footer">
+                <div id="button1">
+                    <img src="./imagenes/anillo_1.png" alt="Anillo">
+                </div>
+                <div id="button2">
+                    <img src="./imagenes/aretes_1.png" alt="Aretes">
+                </div>
+                <div id="button3">
+                    <img src="./imagenes/collar_1.png" alt="Collar">
+                </div>
+            </section>
+        </section>
+        <!--Loader-->
+        <section class="loader">
+            <div>&#9670  </div>
+            <div>&#9670</div>
+            <div>&#9670</div>
+        </section>
+        <!--Modal-->
+        <section class="modal hidden">
+            <div class="modal_content">
+                <img class="modal_content_close" src="https://img.icons8.com/windows/32/000000/macos-close.png" alt="cerrar">
+            
+            <div class="modal_content--slider">
+                <input type="radio" name="slider1" id="radio1" checked >
+                <input type="radio" name="slider1" id="radio2" >
+                <input type="radio" name="slider1" id="radio3" >
+                
+                <div class="cards">
+                    <label for="radio1" id="card1" class="card">
+                        <img src="./imagenes/anillo-2.png" alt="Anillo 1">
+                    </label>
+                    <label for="radio2" id="card2" class="card">
+                        <img src="./imagenes/aretes-2.png" alt="Aretes 2">
+                    </label>
+                    <label for="radio3" id="card3" class="card">
+                        <img src="./imagenes/collar-2.png" alt="Collar 3">
+                    </label>
+                </div>
+
+            </div>
+                <button class="button-red">Lo quiero!</button>
+        </div>
+        </section>
+          
+        <section class="modal2 hidden">
+            <div class="modal_content2">
+                <img class="modal_content_close2" src="https://img.icons8.com/windows/32/000000/macos-close.png" alt="cerrar">
+                
+            </div>
+        </section>
+        <section class="modal3 hidden">
+            <div class="modal_content3">
+                <img class="modal_content_close3" src="https://img.icons8.com/windows/32/000000/macos-close.png" alt="cerrar">
+                
+                <div class="modal_content--slider3">
+                    <input type="radio" name="slider1" id="radio1" checked >
+                    <input type="radio" name="slider1" id="radio2" >
+                    <input type="radio" name="slider1" id="radio3" >
+                    
+                    <div class="cards3">
+                        <label for="radio1" id="card1" class="card3">
+                            <img src="https://static.wikia.nocookie.net/batman/images/9/98/Batman_%28Lego_version%29.png/revision/latest?cb=20220717014056" alt="Batman 1">
+                        </label>
+                        <label for="radio2" id="card2" class="card3">
+                            <img src="https://static.platzi.com/media/public/uploads/spider-man-2_b24c96b3-6d59-496f-815d-32b25eba0141.png" alt="Spider 2">
+                        </label>
+                        <label for="radio3" id="card3" class="card3">
+                            <img src="https://static.platzi.com/media/public/uploads/spider-man-3_19f5c510-8059-4477-abf8-42249a5445b7.png" alt="Spider 3">
+                        </label>
+                    </div>
+    
+                </div>
+                    <button class="button-red">Lo quiero!</button>
+            </div>
+
+            </div>
+        </section>
+        
+    
+</body>
+<script>
+    const modal = document.querySelector('.modal')
+    const button1 = document.querySelector('#button1')
+    const closeButton = document.querySelector('.modal_content_close')
+    
+    button1.addEventListener('click', ()=>{
+        modal.classList.remove('hidden') 
+        modal.classList.add('visible')
+    })
+
+    closeButton.addEventListener('click', () =>{
+        console.log('here')
+        modal.classList.add('hidden')
+        modal.classList.remove('visible')
+    })
+
+    
+    const modal2 = document.querySelector('.modal2')
+    const button2 = document.querySelector('#button2')
+    const closeButton2 = document.querySelector('.modal_content_close2')
+    
+    button2.addEventListener('click', ()=>{
+        modal.classList.remove('hidden') 
+        modal.classList.add('visible')
+    })
+
+    closeButton2.addEventListener('click', () =>{
+        console.log('here')
+        modal.classList.add('hidden')
+        modal.classList.remove('visible')
+    })
+
+    const modal3 = document.querySelector('.modal3')
+    const button3 = document.querySelector('#button3')
+    const closeButton3 = document.querySelector('.modal_content_close3')
+    
+    button3.addEventListener('click', ()=>{
+        modal.classList.remove('hidden') 
+        modal.classList.add('visible')
+    })
+
+    closeButton3.addEventListener('click', () =>{
+        console.log('here')
+        modal.classList.add('hidden')
+        modal.classList.remove('visible')
+    })
+
+
+</script>
+</html>
